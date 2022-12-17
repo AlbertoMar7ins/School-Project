@@ -1,0 +1,89 @@
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* Style each tab content individually */
+  #Alunos {background-color:red;}
+  #Cursos {background-color:green;}
+  #Trabalhos {background-color:blue;}
+  
+ 
+  #grad {
+    background-image: linear-gradient(black, darkgray);
+  }
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+   
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+   
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+   
+  #customers tr:hover {background-color: #ddd;}
+   
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #cdfabe;
+    color: black;
+  }
+  ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+ }
+ 
+ li {
+   float: left;
+ }
+ 
+ li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ /* Change the link color to #111 (black) on hover */
+ li a:hover {
+   background-color: #111;
+ }
+ .active {
+   background-color: #04AA6D;
+ }
+ #grad1 {
+  height: 40px;
+  background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#212529, darkgray);
+}
