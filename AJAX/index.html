@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/school/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+
+    <style>
+        .espaco{
+           margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+        <div id="caixa" class="espaco">Este é o texto da caixa</div>
+        <button id="btn" class="espaco">Clicar</button>
+
+        <br>
+        <div id="caixa1"></div>
+        <div id="caixa2"></div>
+<div class="espaco">
+    <button onclick="fnajax('/school/Server/dados.txt', btn1)">
+        Botão 1
+    </button>
+    <button onclick="fnajax('/school/Server/dados2.txt', btn2)">
+        Botão 2
+    </button>
+
+    <div id="lista"></div>
+    <button onclick="executar()">Clientes</button>
+</div>
+      
+    <script src="/school/JavaScript/main.js"></script>
+    
+</div>
+   
+</body>
+</html>

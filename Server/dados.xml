@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+    <cliente>
+        <nome>Carlos Miguel</nome>
+        <telefone>11111111</telefone>        
+    </cliente>
+    <cliente>
+        <nome>Alberto Martins</nome>
+        <telefone>7777777</telefone>        
+    </cliente>
+    <cliente>
+        <nome>Ana Gabriela</nome>
+        <telefone>99999999</telefone>        
+    </cliente>
+    <cliente>
+        <nome>Cleber Santana</nome>
+        <telefone>157157157</telefone>        
+    </cliente>
+</lista>

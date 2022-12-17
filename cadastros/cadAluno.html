@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/school/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Alunos</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+</head>
+<body>
+    <div class="container" >
+        <div class="row">                
+            <nav class="navbar navbar-expand-sm  navbar-dark">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/school/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadCurso.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadDisciplina.html">Disciplinas</a>
+                        </li>          
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    <center>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-bordered" style="text-align:left; width: 100%;   
+                    background-color: darkgray; 
+                    margin-top: -8px !important; 
+                    border-bottom: none;">
+                    
+                    <h2 style="color:rgb(0, 0, 0); text-align: center; 
+                    background-color: darkgray;">
+                    Cadastro de Alunos😛
+                    </h2>   
+                        <form  method="POST" name="formulario" id="form1">
+                            <tr>
+                                <td>Código do Curos:
+                                    <input type="text"  size="15" name="txtCod" >
+                                </td>
+                                <td>Nome:
+                                    <input type="text"  size="50" name="txtName" >
+                                </td>
+                                <td>Endereço:
+                                    <input type="text"  size="50" name="txtAdress" >
+                                </td>            
+                            </tr>
+                    
+                            <tr>                
+                                <td>Cidade:
+                                    <input type="text"  size="35" name="txtCidade">
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-primary" 
+                                    value="enviar" onclick="validar()">
+                                    Enviar ✋
+                                </td>
+                            </tr>
+                        </form>           
+                </table>
+            </div>
+        </div>
+
+      
+   
+    </div>
+    <div id="btnUpdate2"></div>
+    <script src="/school/JavaScript/main.js"></script>
+    <div id="caixa1"></div>
+    </center>
+</body>
+</html>
+<script>
+
+function validar(){
+       //pegando o valor da matricula pelo name
+       
+            var codCurso = formulario.txtCod;
+            //Verifica se a matricula esta vazia
+            if (codCurso.value == ""){
+                //Caixa de mensagem
+                alert ("Código do curso não informado");
+                //Deixa o input com o focus
+                codCurso.focus();
+                return;
+            }
+        
+            var nome = formulario.txtName;
+            //Verifica se a matricula esta vazia
+            if (nome.value == ""){
+                //Caixa de mensagem
+                alert ("Nome não informado");
+                //Deixa o input com o focus
+                nome.focus();
+                return;
+            }
+        
+            var endereco = formulario.txtAdress;
+            //Verifica se a matricula esta vazia
+            if (endereco.value == ""){
+                //Caixa de mensagem
+                alert ("Endereço não informado");
+                //Deixa o input com o focus
+                endereco.focus();
+                return;
+            }
+        
+            var cidade = formulario.txtCidade;
+            //Verifica se a matricula esta vazia
+            if (cidade.value == ""){
+                //Caixa de mensagem
+                alert ("Cidade não informado");
+                //Deixa o input com o focus
+                cidade.focus();
+                return;
+            }
+        
+ 
+ formulario.submit();
+}
+</script>
